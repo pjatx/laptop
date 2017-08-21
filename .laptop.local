@@ -10,4 +10,7 @@ if [ -f "$HOME/Brewfile.local" ]; then
   fi
 fi
 
+# Install oh my ZSH
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 append_to_file "$HOME/.zshrc" 'export PATH="$PATH:/usr/local/opt/go/libexec/bin"'
